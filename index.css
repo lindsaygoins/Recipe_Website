@@ -1,0 +1,62 @@
+/* CSS color guide: https://www.w3schools.com/cssref/css_colors.asp */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+}
+
+#menu {
+    background-color: gainsboro;
+    padding: 10px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+  color: darkgrey;
+  background-color: whitesmoke;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Scroll box: https://www.w3schools.com/cssref/pr_pos_overflow.asp */
+#scrollbox {
+    height: 100px;
+    width: 600px;
+    margin-bottom: 30px;
+    border: 1px black solid; 
+    overflow: auto;
+}
+
+/* Making the carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+#carousel {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.pics {
+    max-width: 800px;
+}
+
+/* Making the carousel buttons: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+#prevButton, #nextButton {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+/* Positioning the next button: https://www.w3schools.com/cssref/pr_pos_right.asp */
+#nextButton {
+  right: 0;
+}
+
+form {
+  border: 1px black solid;
+  width: 500px;
+  padding: 15px;
+  margin-top: 50px;
+}

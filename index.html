@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div id="menu">
+        <button id="homeLink">Home</button>
+        <button id="chiliLink">Chili</button>
+        <button id="alfredoLink">Fettuccine Alfredo</button>
+        <button id="cookieLink">Chocolate Chip Cookies</button>
+    </div>
+    <h1>Welcome.</h1>
+    <div id="scrollbox">
+        Hello! Welcome to my website. My name is Lindsay. I am just a regular person who does the cooking for my husband and I. I took all these 
+        pictures in the weeks leading up to the making of this website (thus the lack of citations). Two of these recipes are family recipes that are 
+        simple and easy to make. My mom is the creator of the chili recipe and my grandma is the creator of the cookie recipe. The fettuccine
+        alfredo recipe is located here: <a href="https://damndelicious.net/2015/11/30/cajun-chicken-pasta/">Cajun Chicken Pasta</a>. 
+        I changed a few ingredients for my website just because I have different preferences, but the base sauce recipe is still the same.
+    </div>
+
+<!-- Making the carousel: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+<div id="carousel">
+      <img class="pics" src="https://i.imgur.com/ACRYn0s.jpg">
+
+      <img class="pics" src="https://i.imgur.com/dCHBSLH.jpg">
+  
+      <img class="pics" src="https://i.imgur.com/fkrnLHz.jpg">
+  
+<!-- Escape characters: https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-in-html -->
+    
+    <a id="prevButton">&lt</a>
+    <a id="nextButton">&gt</a>
+</div>
+
+
+    <form>
+        <div>
+        Join my mailing list to get the latest recipes!
+        </div>
+
+        <label>Name:
+            <input type="text" id="name" name="name">
+        </label>
+  
+        <label>Email:
+            <input type="email" id="email" name="email">
+        </label>
+
+        <button id="signUp">Sign Me Up!</button>
+    </form>
+
+    <div id="output"></div>
+    <a href="https://www.gmail.com">Send me an email!</a>
+    
+    
+    <script src="menu.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
