@@ -30,49 +30,31 @@ function signUp(){
     })
 }
 
+// Making the carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp
+var slideIndex = 0;
+showSlides();
 
-var prev = document.getElementById('prevButton');
-var next = document.getElementById('nextButton');
-
-
-prev.addEventListener('click', function() {
-    clickButton(-1)
-})
-next.addEventListener('click', function() {
-    clickButton(1)
-})
-
-//Making a carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp
-var index = 0;
-carousel(index);
-
-function clickButton(num) {
-  carousel(index += num);
-}
-
-function carousel(num) {
+function showSlides() {
+  var i;
   var pics = document.getElementsByClassName("pics");
-  if(num > pics.length - 1){
-    index = 0;
-  }
-  if(num <= 0) {
-    index = pics.length - 1;
-  }
-  var i = 0
-  while(i < pics.length) {
+
+  // Keep all pictures from displaying at once
+  for (i = 0; i < pics.length; i++) {
     pics[i].style.display = "none";
-    i++;
   }
+
+  // Go back to the first picture
+  if (slideIndex >= pics.length) {
+    slideIndex = 0;
+  }
+
+  // Display the picture and increment the index to the next picture
+  pics[slideIndex].style.display = "block";
+  slideIndex++;
   
-  index++;
-  if (index > pics.length - 1) {
-    index = 0;
-  }
-
-  pics[index].style.display = "block";
-  setTimeout(carousel, 4000);
-}
-
+  // Change picture every 3 seconds
+  setTimeout(showSlides, 3000);
+} 
   
   
   
