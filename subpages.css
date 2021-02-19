@@ -19,6 +19,7 @@ button {
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    cursor: pointer;
   }
 
 /* Resize image: https://www.geeksforgeeks.org/resize-image-proportionally-with-css/ */
