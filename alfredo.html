@@ -1,21 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="subpages.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Fettuccine Alfredo</title>
-</head>
-<body>
-    <div id="menu">
-        <button id="homeLink">Home</button>
-        <button id="chiliLink">Chili</button>
-        <button id="alfredoLink">Fettuccine Alfredo</button>
-        <button id="cookieLink">Chocolate Chip Cookies</button>
-    </div>
-    <h1>FETTUCCINE ALFREDO</h1>
-    <img src="https://i.imgur.com/klyNhVN.jpg">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <title>Fettuccine Alfredo</title>
+    </head>
+  <body>
+      <div id="nav-placeholder"></div>
+
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("navbar.html");
+        });
+      </script>
+    
+    <div class="container-lg main-content">
+      <h1 class="display-6">FETTUCCINE ALFREDO</h1>
+      <img src="https://i.imgur.com/klyNhVN.jpg" class="img-fluid" alt="" height="700" width="700">
     
     <div id="recipe">
     Ingredients:
@@ -37,9 +40,8 @@
         <li>Combine the pasta and sauce, and serve with your favorite toppings, like grilled chicken or steamed broccoli.</li>
     </ol>
     <p>Adapted from: <a href="https://damndelicious.net/2015/11/30/cajun-chicken-pasta/">Cajun Chicken Pasta</a></p>
-    <!-- Download link: https://www.w3schools.com/tags/att_a_download.asp -->
-    <a href="alfredo.pdf"><button>Click here to download the recipe!</button></a>
+    <a href="alfredo.pdf" download><button>Click here to download the recipe!</button></a>
     </div>
-    <script src="menu.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
