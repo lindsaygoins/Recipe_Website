@@ -1,0 +1,48 @@
+body {
+    background-color: #EFEFEF !important;
+    /* color: #A9A9A9 !important; */
+}
+
+h1 {
+    margin-left: 15%;
+    color: #A9A9A9;
+}
+
+.recipe_pics { 
+    height: 70%;
+    width: 70%;
+    padding-top: 30px;
+}
+
+#recipe {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #A9A9A9;
+    background-color: white;
+}
+
+#recipe ul {
+    margin-top: 7px;
+}
+
+#recipe ol {
+    margin-top: 7px;
+}
+
+#recipe li {
+    margin-bottom: 7px;
+}
+
+button {
+    background-color: #CAEBF2 !important;
+    /* border-color: #CAEBF2; */
+    color: #A9A9A9 !important;
+    /* background-color: #FF3B3F !important; */
+}
+
+/* DELETE BEFORE FINAL */
+#testnav {
+    background-color: #CAEBF2;
+}
