@@ -30,7 +30,6 @@ function signUp(){
     })
 }
 
-// Making the carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp
 var slideIndex = 0;
 showSlides();
 
