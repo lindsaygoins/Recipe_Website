@@ -1,6 +1,5 @@
 body {
     background-color: #EFEFEF !important;
-    /* color: #A9A9A9 !important; */
 }
 
 h1 {
@@ -43,12 +42,7 @@ h1 {
 
 button {
     background-color: #CAEBF2 !important;
-    /* border-color: #CAEBF2; */
     color: #A9A9A9 !important;
     /* background-color: #FF3B3F !important; */
 }
 
-/* DELETE BEFORE FINAL */
-/* #testnav {
-    background-color: #CAEBF2;
-} */
