@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="../static/categories.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <title>Family Recipes</title>
+    </head>
+  <body>
+      <div id="nav-placeholder"></div>
+
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("navbar.html");
+        });
+      </script>
+    
+    <div class="container-lg main-content">
+        <h1 class="display-4">FAMILY RECIPES</h1>
+
+
+        <h3 class="family display-6">Johnson Family</h3>
+        <p>I am lucky to come from a lineage of great cooks on my mom's side (the Johnsons). I wanted to catalog some of my favorite family recipes here.</p>
+
+        <div class="row">
+            <div class="col-4">
+                <a href="//lindsaygoins.github.io/blog/recipes/chili.html"><img src="../images/chili.JPG" class="img-fluid" alt=""/></a>
+                <p class="text-center recipe_name"><a href="//lindsaygoins.github.io/blog/recipes/chili.html" class="text-center h5">MOM'S CHILI</a></p>
+                
+            </div>
+
+            <div class="col-4">
+                <a href="//lindsaygoins.github.io/blog/recipes/cookies.html"><img src="../images/cookie.JPG" class="img-fluid" alt=""/></a>
+                <p class="text-center recipe_name"><a href="//lindsaygoins.github.io/blog/recipes/cookies.html" class="text-center h5">NANA'S COOKIES</a></p>
+            </div>
+        </div>
+
+        <h3 class="family display-6" id="layco">Layco Family</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1200px-Flag_of_the_Philippines.svg.png" class="img-fluid" id="filipino_flag" alt=""/>
+        <p>Filipino recipes coming soon!</p>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
