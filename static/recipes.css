@@ -5,7 +5,8 @@ body {
 h1 {
     padding-top: 30px;
     margin-left: 15%;
-    color: #A9A9A9;
+    /* color: #A9A9A9; */
+    color: #FF3B3F;
 }
 
 .recipe_pics { 
@@ -17,6 +18,10 @@ h1 {
 .caption_pics { 
     height: 70%;
     width: 70%;
+}
+
+#no_caption {
+    margin-bottom: 40px;
 }
 
 #recipe {
