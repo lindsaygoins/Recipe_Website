@@ -8,18 +8,12 @@ body {
 }
 
 h1 {
-    padding-top: 30px;
-    /* color: #A9A9A9; */
+    padding-bottom: 1%;
     color: #FF3B3F;
-}
-
-.category {
-    margin-bottom: 3%;
 }
 
 .family {
     color: #A9A9A9;
-    margin-top: 3%;
 }
 
 a {
@@ -28,7 +22,11 @@ a {
 }
 
 .recipe_name {
-    margin-top: 5px;
+    margin-top: 2%;
+}
+
+#johnson {
+    margin-bottom: 3%;
 }
 
 #layco {
@@ -37,9 +35,9 @@ a {
 }
 
 #filipino_flag {
-    height: auto;
     width: 9%;
+    height: auto;
+    padding-bottom: 2%;
     display: inline-block;
     vertical-align: middle;
-    padding-bottom: 2%;
 }
