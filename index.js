@@ -1,26 +1,33 @@
-var slideIndex = 0;
-showSlides();
+var index = 0;
+showSlides(index);
 
-function showSlides() {
+function changeSlide(n) {
+  showSlides(index += n);
+}
+
+function showSlides(currSlide) {
   var i;
-  var pics = document.getElementsByClassName("pics");
-
-  // Keep all pictures from displaying at once
-  for (i = 0; i < pics.length; i++) {
-    pics[i].style.display = "none";
-  }
-
-  // Go back to the first picture
-  if (slideIndex >= pics.length) {
-    slideIndex = 0;
-  }
-
-  // Display the picture and increment the index to the next picture
-  pics[slideIndex].style.display = "block";
-  slideIndex++;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
   
-  // Change picture every 5 seconds
-  setTimeout(showSlides, 5000);
+  if (currSlide >= slides.length) {
+      index = 0;
+  }
+
+  if (currSlide < 0) {
+      index = slides.length - 1
+  }
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[index].style.display = "block";
+  dots[index].className += " active";
 } 
   
   

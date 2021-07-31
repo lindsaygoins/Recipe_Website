@@ -19,14 +19,45 @@
     
     <div class="container-lg main-content">
     <h1 class="display-3">WELCOME</h1>
+        <p class="lead">Hi, my name is Lindsay.</p>
 
         <div id="carousel">
-            <img class="pics" src="../images/chili.JPG" style="width:100%">
+            <div class="slide">
+              <img class="carousel_pics" src="../images/chili.JPG" style="width:100%">
+            </div>
 
-            <img class="pics" src="../images/brussels.jpeg" style="width:100%">
-        
-            <img class="pics" src="../images/corn.jpeg" style="width:100%">
+            <div class="slide">
+              <img class="carousel_pics" src="../images/brussels.jpeg" style="width:100%">
+            </div>
+
+            <div class="slide">
+              <img class="carousel_pics" src="../images/corn.jpeg" style="width:100%">
+            </div>
+
+            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
+        
+        <div id="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <p>
+          I created this website for two main reasons:
+          <ol>
+              <li>
+                  I do a lot of cooking and I frequently adapt recipes to suit my preferences. 
+                  Because of this, I tend to forget the adaptations I've made to various recipes unless I write them down.
+              </li>
+              <li>
+                  I would be so sad if I lost the recipes from my childhood.
+              </li>
+          </ol>
+        </p>
+        <p>I plan to keep updating this blog over time so stay tuned! Thanks for looking around!</p>
+
     </div>
     <script src="../index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

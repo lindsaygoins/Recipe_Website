@@ -13,7 +13,7 @@ p {
 
 h1 {
   margin-left: 15%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   color: #F9CF00;
 }
 
@@ -21,4 +21,57 @@ h1 {
   width: 70%;
   height: auto;
   margin: auto;
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.previous, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  padding: 2%;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.next {
+  right: 0;
+}
+
+.previous:hover, .next:hover {
+  background-color: rgba(78, 78, 68, 0.664);
+  color: white;
+}
+
+#dots {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 1px;
+  background-color: #A9A9A9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+ol {
+  margin-left: 15%;
+}
+
+li {
+  margin-top: 1%;
+  margin-right: 15%;
 }
